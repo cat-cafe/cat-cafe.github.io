@@ -575,7 +575,8 @@ https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJP3-JffDi20A
 </script>
 <script>
 $(document).ready(function() {alert("data");
-$.getJSON('https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJP3-JffDi20ARQBk0H_81qW0&key=AIzaSyBJNfV4iw_cJrFK8liFbX8RP0kKBEzUIME', function(data) {alert(data);
+$.getJSON('https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJP3-JffDi20ARQBk0H_81qW0&key=AIzaSyBJNfV4iw_cJrFK8liFbX8RP0kKBEzUIME', function(dataj) {//alert(dataj);
+var data = JSON.parse(dataj);
 
 for (i in data.reviews) {
  var d = '<div><a href="'+data.reviews[i].author_url+'"><img src="'+data.reviews[i].profile_photo_url+'"></a><h3><a href="'+data.reviews[i].author_url+'">'+data.reviews[i].author_name+'</a></h3><div rating="'+data.reviews[i].rating+'"></div>'+data.reviews[i].relative_time_description+'<p>'+data.reviews[i].text+'</p></div>';
