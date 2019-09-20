@@ -626,7 +626,7 @@ g-review-stars{
 
 <script>
 $(document).ready(function() {
-$.getJSON('https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJP3-JffDi20ARQBk0H_81qW0&key=AIzaSyBJNfV4iw_cJrFK8liFbX8RP0kKBEzUIME', function(data) {//alert(dataj);
+$.getJSON('js.json', function(data) {//alert(dataj);
 //var data = JSON.parse(dataj);
 for (i in data.result.reviews) {
 /* var d = '<div><a href="'+data.result.reviews[i].author_url+'"><img src="'+data.result.reviews[i].profile_photo_url+'"></a><h3><a href="'+data.result.reviews[i].author_url+'">'+data.result.reviews[i].author_name+'</a></h3><div rating="'+data.result.reviews[i].rating+'"></div>'+data.result.reviews[i].relative_time_description+'<p>'+data.result.reviews[i].text+'</p></div>';
