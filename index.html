@@ -555,7 +555,24 @@ g-review-stars{
 фываа
 https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJP3-JffDi20ARQBk0H_81qW0&key=AIzaSyBJNfV4iw_cJrFK8liFbX8RP0kKBEzUIME
 
-
+<script>
+(function() {
+  var flickerAPI = "https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJP3-JffDi20ARQBk0H_81qW0&key=AIzaSyBJNfV4iw_cJrFK8liFbX8RP0kKBEzUIME";
+  $.getJSON( flickerAPI, {
+    tags: "mount rainier",
+    tagmode: "any",
+    format: "json"
+  })
+    .done(function( data ) {
+      $.each( data.reviews, function( i, reviews ) {
+        $( "<img>" ).attr( "src", reviews[i].profile_photo_url ).appendTo( "#reviews" );
+        if ( i === 3 ) {
+          return false;
+        }
+      });
+    });
+})();
+</script>
 <script>
 $(document).ready(function() {alert("data");
 $.getJSON('https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJP3-JffDi20ARQBk0H_81qW0&key=AIzaSyBJNfV4iw_cJrFK8liFbX8RP0kKBEzUIME', function(data) {alert(data);
