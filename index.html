@@ -1,4 +1,5 @@
-<html>
+<!doctype html>
+<html lang=ru>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta charset="utf-8" />
@@ -27,10 +28,14 @@
 <meta content="/images/favicons/mstile-144x144.png" name="msapplication-TileImage">
 
 
+<!--[if lt IE 9]>
+  <script src="./html5shiv.min.js"></script>
+  <script src="./respond.min.js"></script>
+<![endif]-->
 
 
 	<!--script src="jquery-1.10.2.min.js"></script-->
-	 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	 <script src="./jquery.min.js"></script>
 	<script>
 $(document).ready(function() {
     //var u=location.pathname;
@@ -137,17 +142,11 @@ $('meta[itemprop="ratingValue"]').attr('content', a);
     margin: 10;
     right: 0px;
     z-index: 999;
-    opacity: 0.1;">beta</div>
+    opacity: 0.1;">beta 1.1</div>
 
 <div id=load><img src=images/load.gif style="position: absolute; top: 50%; left: 50%; margin: -40px -50px;"></div>
 
-
-<script type="text/javascript">
-$(document).ready(function () {
-    //$('time.df').dateFormat();
-});
-</script>
-
+<header>
 <!-- Top Baner -->
 <div id="tb" _id=m rel='"Cat Cafe"'>
 <div id="tbc" style="background: url(images/bg.jpg) no-repeat center fixed;
@@ -194,10 +193,10 @@ a.envelope:before {
 }
 a:before {
     /*content: ""!important;*/
-	font-family: 'Glyphicons Halflings';
+    font-family: 'Glyphicons Halflings';
     font-style: normal;
-    font-size: 16;
-    padding: 10;
+    font-size: 16px;
+    padding: 10px;
 }
 @font-face{
 	font-family:'Glyphicons Halflings';
@@ -224,7 +223,7 @@ a:before {
 	</div>
 <!--/ Top Navi -->
 
-
+</header>
 
 
 <style>
@@ -313,7 +312,7 @@ width: 100%;
     margin: 5px;
     display: block;
 }
-#nav a {
+#nav a, .g_pr_Slides a {
     font-family: 'FuturaPTBook-Reg';
     display: table-cell;
     vertical-align: middle;
@@ -359,7 +358,8 @@ width: 100%;
     font-family: 'FuturaPTBook-Reg', 'sans-serif';    line-height: 1.6;
 	font-style: italic;
     font-size: 18px;
-    text-align: left;
+    text-align: justify;
+	text-indent: 0px;
     color: white;
     text-shadow: 0 0 3px black;
 }.sl1{
@@ -407,7 +407,7 @@ left: 0px;
     width: 560px;
 	}
 #reviews{position: absolute;}
-a.dialog-write-button{
+888888888a.dialog-write-button{
     background-color: #4d90fe;
     background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
     background-image: linear-gradient(top,#4d90fe,#4787ed);
@@ -425,17 +425,35 @@ a.dialog-write-button{
     text-align: center;
     /* text-decoration: none; */
 }
+a.dialog-write-button {
+	background-color: #e97f32;
+	background-image: -webkit-linear-gradient(top,#e97f32,#ff6b00);
+	background-image: linear-gradient(top,#e97f32,#ff6b00);
+	border: 2px solid #ffffff;
+	border-radius: 50px;
+	color: #fff !important;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: bold;
+	height: 29px;
+	line-height: 29px;
+	width: 29px;
+	padding: 8px;
+	text-align: center;
+	text-decoration: none;
+	}
 ._eXm {
     background: url(add_r.png);
     display: inline-block;
     height: 14px;
-    margin: 5px;
+    margin: 8px;
     vertical-align: middle;
     width: 15px;
 }
 
 a.dialog-write-button:hover{
-    border-color: #2f5bb7;
+box-shadow: 5px 5px 10px -5px black inset;
 	}
 #map_r a{
     font-weight: bold;
@@ -466,7 +484,7 @@ float: left;
 p.grey{
     margin: 0;
 	color: #999;
-    font-size: 13px;
+    font-size: 14px;
     font-family: arial,sans-serif;
 	}
 #map_r p{
@@ -476,14 +494,14 @@ p.grey{
     width: auto;
 }
 g-review-stars{
-    margin: 3px 5px;
+    margin: 3px 10px 0 0;
     float: left;
 }
 </style>
 
 
 <!-- Center Body -->
-<div class=cbg>
+<main class=cbg>
 
 
 <div id=a _id=m class="m" rel="О нас">
@@ -540,9 +558,9 @@ g-review-stars{
 <div class="v_c fr" id=reviews>
     <!--div id="map_r"-->
 	<div id=add_m_r style="
-    float: right;
-    margin-bottom: -20;
-    margin-right: 30px;
+    /* float: right; */
+    position: absolute;
+    margin: 99px;
 ">
 	<a class="dialog-write-button" target="top" title="Написать отзыв"
 	href="https://www.google.com.ua/search?q=Cat+Cafe,+%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82+%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%B0+%D0%AF%D0%B2%D0%BE%D1%80%D0%BD%D0%B8%D1%86%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE,+82,+%D0%94%D0%BD%D1%96%D0%BF%D1%80%D0%BE%CC%81,+%D0%94%D0%BD%D1%96%D0%BF%D1%80%D0%BE%D0%BF%D0%B5%D1%82%D1%80%D0%BE%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0,+49000&ludocid=7901906391054686528&gws_rd=cr&ei=mKsyWYLqHsvI6AS6lLbACQ#gws_rd=cr&lrd=0x40dbe2f07d897f3f:0x6da935ff1f341940,3,">
@@ -607,7 +625,7 @@ g-review-stars{
     box-shadow: 0 2px 5px -1px #000000b0;
     transition: all 200ms;
 }
-.w3-button:active, :focus {
+.w3-button:active, .w3-button:focus {
     color: #fbfbfb!important;
     box-shadow: 0 3px 8px -1px #000000b0 inset;
     text-shadow: 0 1px 2px black;
@@ -627,66 +645,164 @@ g-review-stars{
     -ms-transform: translate(0%,-50%);
 }
 
-
-
+.g_pr_S_bg{
+    position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	opacity: 0.2;
+	z-index: -1;
+	filter: blur(3px);
+	background-size: cover;
+}
+.g_pr_S_{
+	/*width: 222px;*/
+	margin: 15px 0;
+}
+.g_pr_S_ a{
+	width: 212px;
+}	
+.g_pr_Slides *{
+float: left;
+}
+.g_pr_Slides a{
+ margin: 0 10px 0 0;
+}
 
 </style>
 
 
 <script>
-$(document).ready(function() {
-$.getJSON('js.json', function(data) {//alert(dataj);
-//var data = JSON.parse(dataj);
-for (i in data.result.reviews) {
-/* var d = '<div><a href="'+data.result.reviews[i].author_url+'"><img src="'+data.result.reviews[i].profile_photo_url+'"></a><h3><a href="'+data.result.reviews[i].author_url+'">'+data.result.reviews[i].author_name+'</a></h3><div rating="'+data.result.reviews[i].rating+'"></div>'+data.result.reviews[i].relative_time_description+'<p>'+data.result.reviews[i].text+'</p></div>';
-  */
-  var e=data.result.reviews;
-  var a = '<div id="g_pr_'+i+'" class="g_pr_Slides"><a href="'+e[i].author_url+'" target=top><img src="'+e[i].profile_photo_url+'"></a><a href="'+e[i].author_url+'" target=top>'+e[i].author_name+'</a><br><g-review-stars><span class="_pxg _Jxg" aria-label="Оценка: '+e[i].rating+' из 5,"><span style="width:'+(69/5)*e[i].rating+'px"></span></span></g-review-stars><p class=grey>'+e[i].relative_time_description+'</p><div><br>'+e[i].text+'</div></div>';
+
+
+//reviews  
+function add_reviews(){
+var data = [
+         {
+            "author_name" : "Дмитрий Михальчук",
+            "author_url" : "https://www.google.com/maps/contrib/109615056025581250775/reviews",
+            "language" : "ru",
+            "profile_photo_url" : "https://lh4.ggpht.com/-m8C2mqnNmhM/AAAAAAAAAAI/AAAAAAAAAAA/fdUne3qs8LU/s128-c0x00000000-cc-rp-mo-ba4/photo.jpg",
+            "rating" : 5,
+            "relative_time_description" : "неделю назад",
+            "text" : "Про кофе... и обслуживание- все на 5 баллов, вместе с бариста мы выбрали тип кофе, обсудили подачу и все тонкости. Очень классно, кофе брал в турке, причем сорт кофе выбрали по рекомендации самого бариста. Кофе отличный, его в турке много, все классно. Прийду сюда еще )))))))",
+            "time" : 1567932357
+         },
+         {
+            "author_name" : "Дарья Тимченко",
+            "author_url" : "https://www.google.com/maps/contrib/115807085794228741802/reviews",
+            "language" : "ru",
+            "profile_photo_url" : "https://lh6.ggpht.com/-pJ_fIAkUGRI/AAAAAAAAAAI/AAAAAAAAAAA/XWicokcKfH8/s128-c0x00000000-cc-rp-mo-ba3/photo.jpg",
+            "rating" : 5,
+            "relative_time_description" : "2 недели назад",
+            "text" : "Супер место для встречи с друзьями и не только. \nНеформальная обстановка,  меню не очень большое,  но всё вкусно. \nОтзывчивый персонал и теплый прием.",
+            "time" : 1567762929
+         },
+         {
+            "author_name" : "Ната Рейн",
+            "author_url" : "https://www.google.com/maps/contrib/116390250082267516936/reviews",
+            "language" : "ru",
+            "profile_photo_url" : "https://lh6.ggpht.com/-3XQ3PRrejQY/AAAAAAAAAAI/AAAAAAAAAAA/5DXHCJBACMQ/s128-c0x00000000-cc-rp-mo-ba2/photo.jpg",
+            "rating" : 5,
+            "relative_time_description" : "месяц назад",
+            "text" : "Безумно люблю это заведение! Всегда чисто, уютно и самое важное - безумно вкусно! Есть огромный выбор молочных коктейлей, лимонадов и кофе. Даже самый привередливый  клиент найдёт что-то себе по вкусу , а очень приветливый бариста  поможет Вам в этом нелёгком выборе)",
+            "time" : 1563905702
+         },
+         {
+            "author_name" : "Дмитрий Куликов",
+            "author_url" : "https://www.google.com/maps/contrib/111190733748440621379/reviews",
+            "language" : "ru",
+            "profile_photo_url" : "https://lh4.ggpht.com/-oZqE8PuywhE/AAAAAAAAAAI/AAAAAAAAAAA/7jIJtKK7cKI/s128-c0x00000000-cc-rp-mo-ba3/photo.jpg",
+            "rating" : 5,
+            "relative_time_description" : "3 месяца назад",
+            "text" : "Идеальное место для свободного времяпровождения. В меню множество разновидностей кофе. Принимает гостей доброжелательный официант. Всегда готов качественно  подобрать по вкусу необходимый для вас кофе. Это место вы никогда не забудете!",
+            "time" : 1560232922
+         },
+         {
+            "author_name" : "Helen Khripkova",
+            "author_url" : "https://www.google.com/maps/contrib/116987667065641183010/reviews",
+            "language" : "ru",
+            "profile_photo_url" : "https://lh5.ggpht.com/-8htji4VKUCQ/AAAAAAAAAAI/AAAAAAAAAAA/P2_sZKdHNyg/s128-c0x00000000-cc-rp-mo-ba3/photo.jpg",
+            "rating" : 5,
+            "relative_time_description" : "2 месяца назад",
+            "text" : "Милые животные. Учитывая то, что у нас дома еще и свой пушистик, были рады пообщаться)) Кроме кошек еще есть очаровательные мышки, ребенок носил на руках, ни разу не укусила. В кафе есть напитки и печенье. Вполне хватает, если учитывать, что главное в заведении таки кошки)",
+            "time" : 1562231807
+         }
+      ];
+
+$.each(data, function(i, item) {
+  var e=data;
+  var a = '<div id="g_pr_'+i+'" class="g_pr_Slides tx"><div class="g_pr_S_bg" style="background-image: url('+e[i].profile_photo_url+');"></div><a href="'+e[i].author_url+'" target=top><img src="'+e[i].profile_photo_url+'"></a><div  class="g_pr_S_"><a href="'+e[i].author_url+'" target=top>'+e[i].author_name+'</a><br><g-review-stars><span class="_pxg _Jxg" aria-label="Оценка: '+e[i].rating+' из 5,"><span style="width:'+(69/5)*e[i].rating+'px"></span></span></g-review-stars><p class=grey>'+e[i].relative_time_description+'</p></div>'+e[i].text+'</div>';
   
-  
+
 $("#reviews").append(a);
-showDivs(slideIndex);
+
+if(i==4){
+//showDivs(1);
 };
-
 });
-
-
-
-});
-
-
-
-
+};
+add_reviews();
 
 function plusDivs(n) {
   showDivs(slideIndex += n);
 };
-
 function showDivs(n) {
-//alert(n);
   var i;
   var x = $(".g_pr_Slides");
-  //alert("x.length "+x.length);
   if (n > x.length) {slideIndex = 1}
   if (n < 1) {slideIndex = x.length} ;
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
+	//x[i].hide();
   };
   x[slideIndex-1].style.display = "block";
+  //x[slideIndex-1].show();
   setHeight();
 };
-
-
-
 var slideIndex = 1;
-showDivs(slideIndex);
-
+//showDivs(slideIndex);
 $('#plusDivsa').click(function() {
   plusDivs(-1);
 });
 $('#plusDivsb').click(function() {
   plusDivs(+1);
 });
+
+showDivs(1);
+//\reviews
+
+
+/*	  
+$(document).ready(function() {//https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJP3-JffDi20ARQBk0H_81qW0&key=AIzaSyBJNfV4iw_cJrFK8liFbX8RP0kKBEzUIME
+
+
+$.getJSON('./js.json', function(data) {//alert(dataj);
+//var data = JSON.parse(dataj);
+for (i in data.result.reviews) {
+  var e=data.result.reviews;
+  var a = '<div id="g_pr_'+i+'" class="g_pr_Slides tx"><div class="g_pr_S_bg" style="background-image: url('+e[i].profile_photo_url+');"></div><a href="'+e[i].author_url+'" target=top><img src="'+e[i].profile_photo_url+'"></a><div  class="g_pr_S_"><a href="'+e[i].author_url+'" target=top>'+e[i].author_name+'</a><br><g-review-stars><span class="_pxg _Jxg" aria-label="Оценка: '+e[i].rating+' из 5,"><span style="width:'+(69/5)*e[i].rating+'px"></span></span></g-review-stars><p class=grey>'+e[i].relative_time_description+'</p></div>'+e[i].text+'</div>';
+  
+
+$("#reviews").append(a);
+
+n=data.result.reviews.length-1;
+if(i==n){
+showDivs(1);};
+};
+
+});
+
+
+
+});*/
+
+
+
+
+
+
 
 </script>
 	
@@ -856,7 +972,26 @@ div.mod_p{
         </div>
     </div>
 
+<div id="otk__mod"></div>
+	
+	
+<script>
+function add_modal(){
+var data = [ 
+ {"n": "mexico", "r": "club", "t": "club"}, 
+ {"n": "guatemala", "r": "club", "t": "club"},
+ {"n": "nicaragua", "r": "nicaragua", "t": "nicaragua"}
+];
 
+$.each(data, function(i, e) {
+  var e=data;
+  var a = '<div rel="'+e[i].n+'" class="modal"><div class="b p"></div><div class="b n"></div><div class=mod_p><div class=imgmod style="background: url(otk/'+e[i].n+'_1.jpg)no-repeat center center; webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;"></div><div class=mod><strong>"'+e[i].t+'"</strong>"'+e[i].r+'"<br></div> </div><div class=mc><img src="https://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png" draggable="false"></div> </div>';
+  $("#otk__mod").append(a);
+});
+};
+</script>
+
+	
 
 	<!--?php/*
 
@@ -916,10 +1051,10 @@ div.mod_p{
 </div>
 
 
+</main>
 
 
-
-<div id=a4 _id=m class="m" rel="Контакты">
+<footer id=a4 _id=m class="m" rel="Контакты">
 
 <div class=m_c>
 <div class=fr>
@@ -936,12 +1071,12 @@ dp.ua@mail.com<br>
 
 </p>
 
-<div class=social-icon-box>
+<nav class=social-icon-box>
 <a class=icon-in href="#"></a>
 <a class=icon-fb href="#"></a>
 <a class=icon-fq href="#"></a>
 <a class=icon-tw href="#"></a>
-</div>
+</nav>
 
 </div>
 
@@ -982,7 +1117,7 @@ margin: 0px 16px 16px 16px;
 
 </div>
 
-</div>
+</footer>
 
 <!--/ Center Body -->
 
@@ -995,8 +1130,7 @@ margin: 0px 16px 16px 16px;
 
 
 
-
-<script>
+<script>/*
 //modal
 $("#otkuda_con a").click(function (){
 e = $(this).attr('id');
@@ -1034,9 +1168,32 @@ $('[rel="'+e+'"]').show();
 window.location.hash = '['+e+']';
 });
 //\modal
-
+*/
 	function setHeight() {
-		var ch=document.body.clientHeight;
+	
+	
+	
+	
+	
+	  var mW = 0, mH = 0;
+  if( typeof( window.innerWidth ) == 'number' ) {
+    //Non-IE
+    mW = window.innerWidth;
+    mH = window.innerHeight;
+  } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+    //IE 6+ in 'standards compliant mode'
+    mW = document.documentElement.clientWidth;
+    mH = document.documentElement.clientHeight;
+  } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+    //IE 4 compatible
+    mW = document.body.clientWidth;
+    mH = document.body.clientHeight;
+  }
+  
+  
+		var ch=mH;
+ 
+		//var ch=document.body.clientHeight;
 		var tbc=440;
 	if(ch<440){bh=440;}else{bh=ch;};
     $('#tbc').add('#cbc').css({
@@ -1147,6 +1304,47 @@ $(window).bind('scroll resize load ready',function(){_S_c();rN();});	//resize lo
 //$(window).bind('scroll resize load ready',function(){_S_c()});	//resize load ready
 
 $(document).ready(function() {
+
+
+//modal
+add_modal();
+$(".modal").hide();
+$("#otkuda_con a").click(function (){
+e = $(this).attr('id');
+$(".modal").hide();
+r="'"+e+"'";
+$('[rel="'+e+'"]').show(100);
+window.location.hash = '['+e+']';
+});
+
+$('.modal div.mc').click(function (){//lose
+	r=$(this).parent().attr("rel");
+    $('[rel="'+r+'"]').hide(100);
+history.pushState('', document.title, window.location.pathname);
+});
+
+$(".modal .p").click(function (){
+	var r=$(this).parent().attr("rel");
+	var e=$('[rel="'+r+'"]').prev().attr("rel");
+    $('[rel="'+r+'"]').hide();
+	if(e==undefined){
+	e=$('div.modal').last().attr("rel");
+	};
+$('[rel="'+e+'"]').show();
+window.location.hash = '['+e+']';
+});
+
+$(".modal .n").click(function (){
+	var r=$(this).parent().attr("rel");
+	var e=$('[rel="'+r+'"]').next().attr("rel");
+	if(e==undefined){
+	e=$('.modal').first().attr("rel");
+	};
+    $('[rel="'+r+'"]').hide();
+$('[rel="'+e+'"]').show();
+window.location.hash = '['+e+']';
+});
+//\modal
 
 
 	h=window.location.hash;
