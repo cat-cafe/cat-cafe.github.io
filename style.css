@@ -2,8 +2,8 @@ body{
 	background: white no-repeat center center fixed;
 	margin: 0px;
 	}
+footer, nav, header, section, aside, main {display: block}
 #tb{
-	background: #fff;
 	width: 100%; 
 	min-width: 960px; 
 	display: table;
@@ -197,16 +197,17 @@ body{
 
 
 
-.scyf{position: fixed; top: 0px; left:0px; z-index: 100;
+.scyf{position: fixed; top: 0px; left:0px; z-index: 100; margin: 0px auto;
     /*background: rgba(80, 114, 153, 0.95);*/
 	background: rgba(95, 72, 47, 0.95);
     box-shadow: 0 -10px 10px 9px #000;}
-.scy{position: absolute; margin: 0 auto; z-index: 100;
+.scy{position: absolute; margin: 20px auto; z-index: 100;
     background: rgba(95, 72, 47, 1);}
 #scy{width: 100%; 
     display: table;
-    height: 42px;}
-#scyc{margin: 0 auto; width: 960px;}
+    height: 42px;
+    transition: all 0ms ease 0s}
+#scyc{width: 960px;}
 	
 	
 	
@@ -357,7 +358,7 @@ z-index: 14;
 .hide{display: none;}
 .show{display: table;}
 .modal{
-	margin: -600 auto;
+	margin: -550px auto;
     width: 600px;
     padding: 0px;
     background: #fff;
