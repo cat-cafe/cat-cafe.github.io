@@ -1,6 +1,7 @@
 # cat-cafe.github.io
  
 ## Related projects
+- Business card website - [Cat Cafe](https://cat-cafe.github.io/index.html)
 - Application for online booking - [Cat Cafe booking](https://cat-cafe.github.io/booking/index.html)
 - Online store selling coffee beans - [Cat Cafe coffee shop](https://cat-cafe.github.io/shop/index.html)
 
