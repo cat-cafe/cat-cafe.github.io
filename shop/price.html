@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+	<title>Купить кофе свежей обжарки в интернет-магазине Cat Cafe coffee shop. Доставка кофе по территории Украины: Киев, Днепр, Харьков, Одесса, Львов </title>
+	<meta name="HandheldFriendly" content="true">
+	<meta name="yes" content="yes">
+	<meta name="keywords" content="интернет-магазин кофе, кофейный интернет-магазин, Cat Cafe, Cat, Cafe, Кэт Кафе, купить кофе, зерновой кофе, молотый кофе, сублимированный кофе">
+	<meta name="description" content="Сертифицированный интернет-магазин свежеобжаренного кофе с бесплатной доставкой в Украине: Киеве, Днепре, Харькове, Одессе, Львове и других регионах.">
+	
+	
+<meta property="og:title" content="Купить кофе свежей обжарки в интернет-магазине Cat Cafe coffee shop. Доставка кофе по территории Украины: Киев, Днепр, Харьков, Одесса, Львов. ">
+<meta property="og:site_name" content="Cat Cafe coffee shop">
+<meta property="og:url" content="https://cat-cafe.github.io/shop">
+<meta property="og:description" content="Сертифицированный интернет-магазин свежеобжаренного кофе с бесплатной доставкой в Украине: Киеве, Днепре, Харькове, Одессе, Львове и других регионах.">
+
+
+	<script src="../src/js/jquery.min.js"></script>
+
+
+<style>
+.capitalize {
+text-transform: capitalize;
+}
+</style>
+  </head>
+  <body>
+  
+
+<main id=productData>
+
+  <!--table border="1">
+   <caption>Таблица размеров обуви</caption>
+   <tr>
+    <th>id</th>
+    <th>название</th>'+data.grade+' '+data.name+' '+data.suffix+' 
+    <th>вес</th>100г
+    <th>цена</th>'+data.price+'
+    <th>описание</th>'+data.text+'
+   </tr-->
+
+</main>
+
+<div id=productData2></div>
+    <script>
+	/*
+productDataComponents = productData.map(function(data){ return '<li key='+data.id+' id="product_'+data.id+'" class="goods-item '+data.grade+' '+data.country+' '+data.continent+' available_'+data.available+'" tabIndex='+data.id+'  data-rating='+data.rating+' data-price='+data.price+' data-name='+data.name+' data-grade='+data.grade+'><div onclick="show_good(event, '+data.id+')" class="goods-item__img"><div class="goods-item__title"><p class="suffix">'+data.suffix+'</p><a class="clickgood" data-id='+data.id+' onclick="show_good(event, '+data.id+')" href="?product='+data.id+'" >'+data.name+'</a><p>'+data.continent+'<br />100% '+data.grade+'</p></div><button class="add-item" data-id='+data.id+' data-name="'+data.name+' '+data.suffix+' '+data.grade+'" value='+data.price+' title="Добавить в корзину"><p class="goods-item__price">'+data.price+'<i>грн./100г.</i><br /><span class="fa fa-shopping-cart"></span></p></button></div><div class="goods-item__list_view"><h2 onclick="show_good(event, '+data.id+')">'+data.name+' '+data.suffix+'</h2><g-review-stars><span class="stars_rating" data-rating='+data.rating+' aria-label="Оценка: '+data.rating+' из 5,"><span style="width:'+(69/5)*data.rating+'px"></span></span> Оценка: '+data.rating+' из 5 </g-review-stars><p>'+data.text+'</p><div><p>Рекомендованные способы приготовления:</p><div class=flex-around><a class=coffeeicons title="Турка">k</a><a class=coffeeicons title="Кофемашина">s</a><a class=coffeeicons title="Гейзерная кофеварка">b</a><a class=coffeeicons title="Фильтр">}</a><a class=coffeeicons title="Френч пресс">.</a></div></div><div class=goods-item__grade><small><b>Состав: </b>100% '+data.grade+'</small><small><b>Степень обжарки: </b>'+data.roasting+'</small><small><b>Способ обработки: </b>Мытый</small></div><p>Номер товара: '+data.id+'</p></div></li>'}).join('');*/
+
+productDataComponents = productData.map(function(data){var d=Math.ceil(data.price_/4), d5=Math.ceil(d*1.5);  return '<tr><th>'+data.id+'</th><th class=capitalize>'+data.grade+' '+data.name+' '+data.suffix+'</th><th>250г</th><th>'+d+'</th><th>'+(data.price*2.5)+'</th><th>'+d5+'</th><th>'+Math.ceil(d5*0.7)+'</th><th>'+Math.ceil(d5-(d5*0.3)-d)+'</th><th>'+data.text+'</th>'}).join('');
+document.getElementById('productData').innerHTML="<table border=1><caption>Таблица</caption>   <tr><th>id</th><th>название</th><th>вес</th><th>цена d</th><th>цена 1</th><th>цена опт 50%</th><th>цена -30%</th><th>разница</th><th>описание</th></tr>"+productDataComponents+"</table>";
+
+productDataComponents2 = productData.map(function(data){var d=Math.ceil(data.price_/4), d5=Math.ceil(d*1.5);  return '<tr><th>'+data.id+'</th><th class=capitalize>'+data.grade+' '+data.name+' '+data.suffix+'</th><th>250г</th><th>'+d5+'</th><th>'+data.text+'</th>'}).join('');
+document.getElementById('productData2').innerHTML="<table border=1><caption>Кофе в зёрнах и молотый (упаковка 250г, 500г, 1кг)</caption>   <tr><th>id</th><th>Название</th><th>Вес</th><th>Цена</th><th>Описание</th></tr>"+productDataComponents2+"</table>";
+</script>
+</body>
+</html>
